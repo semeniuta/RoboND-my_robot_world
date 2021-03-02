@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='small_table'>
-    <link name='link_0'>
+    <link name='table_base'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -101,7 +101,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_0_clone'>
+    <link name='table_top'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -201,7 +201,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1'>
+    <link name='table_leg'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -301,9 +301,9 @@
         </surface>
       </collision>
     </link>
-    <joint name='link_0_JOINT_1' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1</child>
+    <joint name='table_base_JOINT_1' type='fixed'>
+      <parent>table_base</parent>
+      <child>table_leg</child>
       <pose>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -318,9 +318,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_1_JOINT_2' type='fixed'>
-      <parent>link_1</parent>
-      <child>link_0_clone</child>
+    <joint name='table_leg_JOINT_2' type='fixed'>
+      <parent>table_leg</parent>
+      <child>table_top</child>
       <pose>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
