@@ -207,7 +207,7 @@ link_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_library(gzwelcome SHARED src/gazebo_welcome.cpp)
+add_library(gzwelcome SHARED scripts/gazebo_welcome.cpp)
 target_link_libraries(gzwelcome ${GAZEBO_LIBRARIES})
 
 
