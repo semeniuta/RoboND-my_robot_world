@@ -12,6 +12,7 @@ find_package(catkin REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
+find_package(gazebo REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -112,8 +113,13 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
-# ${catkin_INCLUDE_DIRS}
+    ${GAZEBO_INCLUDE_DIRS}    
+    # include
+    # ${catkin_INCLUDE_DIRS}
+)
+
+link_directories(
+    ${GAZEBO_LIBRARY_DIRS}
 )
 
 ## Declare a C++ library
@@ -200,3 +206,8 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_library(gzwelcome SHARED src/gazebo_welcome.cpp)
+target_link_libraries(gzwelcome ${GAZEBO_LIBRARIES})
+
+
