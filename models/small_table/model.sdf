@@ -3,7 +3,7 @@
   <model name='small_table'>
     <link name='table_base'>
       <inertial>
-        <mass>1</mass>
+        <mass>3</mass>
         <inertia>
           <ixx>0.145833</ixx>
           <ixy>0</ixy>
@@ -187,7 +187,7 @@
     </link>
     <link name='table_leg'>
       <inertial>
-        <mass>1</mass>
+        <mass>2</mass>
         <inertia>
           <ixx>0.145833</ixx>
           <ixy>0</ixy>
