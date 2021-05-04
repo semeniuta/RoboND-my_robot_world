@@ -223,15 +223,15 @@
   </joint>
 
   <gazebo reference="left_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/SkyBlue</material>
   </gazebo>
 
   <gazebo reference="right_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/SkyBlue</material>
   </gazebo>
 
   <gazebo reference="chassis">
-    <material>Gazebo/SkyBlue</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="camera">
