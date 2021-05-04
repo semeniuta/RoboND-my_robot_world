@@ -6,6 +6,8 @@
   <!-- <arg name="world_file" default="$(find my_robot_world)/worlds/empty.world"/> -->
   <arg name="world_file" default="$(find my_robot_world)/worlds/my.world"/>
 
+  <arg name="robot_type" default="kinect_robot" />
+
   <!-- Launch Gazebo World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="use_sim_time" value="true"/>
@@ -23,7 +25,9 @@
   <arg name="yaw" default="0"/>
 
   <!-- Launch other relevant files-->
-  <include file="$(find my_robot_world)/launch/robot_description.launch"/>
+  <include file="$(find my_robot_world)/launch/robot_description.launch">
+    <arg name="robot_type" value="$(arg robot_type)" />
+  </include>
 
     <!-- Spawn My Robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 

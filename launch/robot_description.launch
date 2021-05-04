@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <launch>
 
+  <arg name="robot_type" default="kinect_robot" />
+
   <!-- send urdf to param server -->
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot_world)/urdf/kinect_robot.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot_world)/urdf/$(arg robot_type).xacro'" />
 
     <!-- Send fake joint values-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
