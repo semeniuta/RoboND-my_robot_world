@@ -29,3 +29,22 @@ Launch Gazebo world with the robot in it:
 ```bash
 roslaunch my_robot world.launch
 ```
+
+## Robot types
+
+Robot with Kinect RGBD sensor and LIDAR:
+
+```bash
+roslaunch my_robot_world world.launch robot_type:=kinect_robot
+```
+
+```bash
+roslaunch my_robot_world world.launch 
+# assumes robot_type:=kinect_robot (default)
+```
+
+Robot with RGB camera and LIDAR:
+
+```bash
+roslaunch my_robot_world world.launch robot_type:=simple_robot
+```
