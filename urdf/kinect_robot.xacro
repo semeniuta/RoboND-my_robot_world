@@ -2,7 +2,7 @@
 
 <robot name="simple_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find my_robot_world)/urdf/simple_robot.gazebo" />
+  <xacro:include filename="$(find my_robot_world)/urdf/kinect_robot.gazebo" />
 
   <link name="robot_footprint"></link>
 
@@ -183,7 +183,7 @@
 
   <joint name="camera_optical_joint" type="fixed">
     <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
-    <parent link="camera_link"/>
+    <parent link="camera"/>
     <child link="camera_link_optical"/>
   </joint>
 
