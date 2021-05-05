@@ -2082,8 +2082,18 @@
     <state world_name='default'>
       <sim_time>0 0</sim_time>
       <real_time>0 0</real_time>
-      <wall_time>1620213666 257663332</wall_time>
+      <wall_time>1620215018 406726788</wall_time>
       <iterations>0</iterations>
+      <model name='DigitalKiosk'>
+        <pose>4.41294 -4.35335 0 0 -0 1.5834</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>4.41294 -4.35335 0 0 -0 1.5834</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='bookshelf'>
         <pose>1.79468 1.68868 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2095,7 +2105,7 @@
         </link>
       </model>
       <model name='bookshelf_0'>
-        <pose>4.67233 -0.443302 -0 0 -0 3.13486</pose>
+        <pose>4.67233 -0.443302 0 0 -0 3.13486</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose>4.67233 -0.443302 -0 0 -0 3.13486</pose>
@@ -2202,8 +2212,8 @@
         <link name='link'>
           <pose>5.31374 1.47573 0.149 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 1.9e-05 -0 -0.000128 2e-06 0</acceleration>
-          <wrench>1e-06 3.8e-05 -1e-06 0 -0 0</wrench>
+          <acceleration>-0 -1.9e-05 0 0.000128 -2e-06 0</acceleration>
+          <wrench>-1e-06 -3.8e-05 1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -2217,47 +2227,47 @@
         </link>
       </model>
       <model name='small_table'>
-        <pose>-0.946288 0.911395 -7e-06 0 0 -2.1e-05</pose>
+        <pose>-0.947112 0.911235 -3e-06 -0 -0 -3.8e-05</pose>
         <scale>1 1 1</scale>
         <link name='table_base'>
-          <pose>-0.946288 0.911395 0.014993 0 0 -2.1e-05</pose>
-          <velocity>-5e-06 -0 -0.006631 -2e-06 5.1e-05 1e-06</velocity>
-          <acceleration>-0.006699 -0.000117 -9.7999 0.001533 -0.052766 0.001158</acceleration>
-          <wrench>-0.020096 -0.00035 -29.3997 0 -0 0</wrench>
+          <pose>-0.947112 0.911235 0.014997 -0 -0 -3.8e-05</pose>
+          <velocity>-9e-06 1e-06 -0.003169 -4e-06 -0.000121 -4e-06</velocity>
+          <acceleration>-0.008398 0.00082 -9.79984 -0.007225 -0.066516 -0.004045</acceleration>
+          <wrench>-0.025194 0.00246 -29.3995 0 -0 0</wrench>
         </link>
         <link name='table_leg'>
-          <pose>-0.946288 0.911395 0.504993 0 0 -2.1e-05</pose>
-          <velocity>3.9e-05 5e-06 -0.006631 -5e-06 6.4e-05 1e-06</velocity>
-          <acceleration>0.005979 4.4e-05 -9.80005 0.000575 -0.02687 -0.000885</acceleration>
-          <wrench>0.011958 8.8e-05 -19.6001 0 -0 0</wrench>
+          <pose>-0.947112 0.911235 0.504997 -0 -0 -3.8e-05</pose>
+          <velocity>-4.6e-05 3e-06 -0.003169 -4e-06 -0.000106 -3e-06</velocity>
+          <acceleration>0.00744 -0.00066 -9.80009 -0.003443 -0.0338 0.002109</acceleration>
+          <wrench>0.014879 -0.00132 -19.6002 0 -0 0</wrench>
         </link>
         <link name='table_top'>
-          <pose>-0.946288 0.911395 1.01499 0 -0 -2.1e-05</pose>
-          <velocity>8e-05 1e-05 -0.006631 -6e-06 6.9e-05 1e-06</velocity>
-          <acceleration>0.008138 0.000262 -9.80018 -1.7e-05 -0.016347 -0.000273</acceleration>
-          <wrench>0.008138 0.000262 -9.80018 0 -0 0</wrench>
+          <pose>-0.947112 0.911235 1.015 -0 -0 -3.8e-05</pose>
+          <velocity>-9.1e-05 5e-06 -0.003169 -4e-06 -0.0001 -3e-06</velocity>
+          <acceleration>0.010315 -0.00114 -9.8003 -0.001582 -0.02041 0.001936</acceleration>
+          <wrench>0.010315 -0.00114 -9.8003 0 -0 0</wrench>
         </link>
       </model>
       <model name='small_table_0'>
-        <pose>7.16093 -1.34578 0 0 0 -1.9e-05</pose>
+        <pose>7.16011 -1.34594 0 -0 -0 -3.5e-05</pose>
         <scale>1 1 1</scale>
         <link name='table_base'>
-          <pose>7.16093 -1.34578 0.015 0 0 -1.9e-05</pose>
-          <velocity>-1e-06 0 0.006629 -3e-06 -4.5e-05 0</velocity>
-          <acceleration>0.004475 0.000499 13.2583 -0.001196 -0.092119 -0.003688</acceleration>
-          <wrench>0.013426 0.001498 39.775 0 -0 0</wrench>
+          <pose>7.16011 -1.34594 0.015 -0 -0 -3.5e-05</pose>
+          <velocity>1e-06 0 0.003171 -3e-06 9.8e-05 0</velocity>
+          <acceleration>0.010694 -0.000722 6.33868 0.000662 0.220373 0.004044</acceleration>
+          <wrench>0.032081 -0.002166 19.016 0 -0 0</wrench>
         </link>
         <link name='table_leg'>
-          <pose>7.16093 -1.34578 0.505 0 -0 -1.9e-05</pose>
-          <velocity>-5e-05 6e-06 0.006629 -6e-06 -6.3e-05 -1e-06</velocity>
-          <acceleration>-0.087972 -1.6e-05 13.2586 -0.000436 -0.123584 -0.003367</acceleration>
-          <wrench>-0.175944 -3.3e-05 26.5172 0 -0 0</wrench>
+          <pose>7.16011 -1.34594 0.505 0 -0 -3.5e-05</pose>
+          <velocity>4.6e-05 -2.7e-05 0.003171 1.7e-05 9.6e-05 -5e-06</velocity>
+          <acceleration>0.093598 -0.030212 6.33913 0.020119 0.203296 -0.001594</acceleration>
+          <wrench>0.187197 -0.060423 12.6783 0 -0 0</wrench>
         </link>
         <link name='table_top'>
-          <pose>7.16093 -1.34578 1.015 0 -0 -1.9e-05</pose>
-          <velocity>-9.4e-05 1.1e-05 0.006629 -7e-06 -7.1e-05 -1e-06</velocity>
-          <acceleration>-0.170399 -0.000256 13.2588 -0.000106 -0.13647 -0.003351</acceleration>
-          <wrench>-0.170399 -0.000256 13.2588 0 -0 0</wrench>
+          <pose>7.16011 -1.34594 1.015 0 -0 -3.5e-05</pose>
+          <velocity>9.4e-05 -4.8e-05 0.003171 2.4e-05 9.4e-05 -5e-06</velocity>
+          <acceleration>0.18687 -0.052485 6.33952 0.027997 0.195836 -0.002354</acceleration>
+          <wrench>0.18687 -0.052485 6.33952 0 -0 0</wrench>
         </link>
       </model>
       <model name='table'>
@@ -2296,7 +2306,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.693663 7.12421 17.6877 0 1.1538 -0.832689</pose>
+        <pose>-4.73249 -1.8613 10.3219 0 0.873799 -0.072691</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3696,6 +3706,43 @@
         <kinematic>0</kinematic>
       </link>
       <pose>6.79138 0.211502 0 0 -0 0</pose>
+    </model>
+    <model name='DigitalKiosk'>
+      <static>1</static>
+      <link name='body'>
+        <pose>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/digitalkiosk/1/files/meshes/DigitalKiosk.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/digitalkiosk/1/files/meshes/DigitalKiosk_Col.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>3.80258 -6.51661 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
